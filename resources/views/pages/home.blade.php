@@ -57,17 +57,17 @@
                     impacto que hemos generado.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <x-cards.project-card image="{{ asset('img/projects/semiInvernadero.webp') }}"
+                <x-cards.project-card image="{{ asset('img/projects/semiInvernadero.avif') }}"
                     title="Semi Invernadero Agrícola"
                     description="Proyecto agrícola de 1 ha con techos retráctiles. Incluye estudio técnico, cubicación y análisis de costos según normativa chilena."
                     :tags="['Proyecto Agrícola','Normativa Chilena']" :delay="100" />
 
-                <x-cards.project-card image="{{ asset('img/projects/vivienda_unifamiliar_280m2.webp') }}"
+                <x-cards.project-card image="{{ asset('img/projects/vivienda_unifamiliar_280m2.avif') }}"
                     title="Vivienda unifamiliar 280m2"
                     description="Casa de 2 pisos en madera. Evaluación completa, asesoría técnica y control de obra con hoja de cálculo."
                     :tags="['Vivienda Madera', 'Asesoría Técnica']" :delay="200" />
 
-                <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.webp') }}"
+                <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}"
                     title="Asesoría por Grietas en Vivienda"
                     description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
                     :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />

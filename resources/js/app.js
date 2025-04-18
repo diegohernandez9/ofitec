@@ -9,10 +9,17 @@ import 'swiper/css/pagination';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
-// Registrar módulos
+AOS.init({
+    duration: 1000,  
+    once: true,       
+    offset: 50,
+    mirror: false,
+  });
+  
+
 Swiper.use([Navigation, Pagination]);
 
-// Inicializar Swiper cuando se cargue el DOM
+
 document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.constructionServicesSwiper', {
         slidesPerView: 1,
@@ -40,9 +47,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-AOS.init({
-  duration: 1000,   // duración de las animaciones en ms
-  once: true,       // animar solo una vez al entrar
-});
 
 

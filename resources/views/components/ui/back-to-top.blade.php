@@ -1,4 +1,4 @@
-<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 hover:bg-slate-800 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
     <i class="fas fa-arrow-up"></i>
 </button>
 

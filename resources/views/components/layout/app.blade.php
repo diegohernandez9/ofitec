@@ -11,7 +11,7 @@
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans bg-light">
+<body class="font-sans bg-light overflow-x-hidden">
     <x-layout.navigation />
     
     <main>

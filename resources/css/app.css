@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-container {
+    position: relative;
+    padding: 0 40px;
+}
+
+.custom-swiper-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.custom-swiper-button-prev {
+    left: -5px;
+}
+
+.custom-swiper-button-next {
+    right: -5px;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000000;
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

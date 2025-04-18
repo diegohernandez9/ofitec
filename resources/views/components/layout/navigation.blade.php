@@ -22,10 +22,10 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden">
             <div class="flex flex-col space-y-4 py-4">
-                <a href="#inicio" class="nav-link text-primary hover:text-gray-600 transition duration-300">Inicio</a>
-                <a href="#servicios" class="nav-link text-primary hover:text-gray-600 transition duration-300">Servicios</a>
-                <a href="#nosotros" class="nav-link text-primary hover:text-gray-600 transition duration-300">Nosotros</a>
-                <a href="#proyectos" class="nav-link text-primary hover:text-gray-600 transition duration-300">Proyectos</a>
+                <a href="{{route('home')}}" class="nav-link text-primary hover:text-gray-600 transition duration-300 {{ request()->is('/') ? 'font-bold' : '' }}">Inicio</a>
+                <a href="{{ url('/') }}#servicios" class="nav-link text-primary hover:text-gray-600 transition duration-300 {{ request()->is('servicios') ? 'font-bold bg-primary ' : '' }}">Servicios</a>
+                <a href="#nosotros" class="nav-link text-primary hover:text-gray-600 transition duration-300 {{ request()->is('nosotros') ? 'font-bold' : '' }}">Nosotros</a>
+                <a href="{{ route('projects.index') }}" class="nav-link text-primary hover:text-gray-600 transition duration-300 {{ request()->routeIs('projects.index') ? 'font-bold' : '' }}">Proyectos</a>
                 <a href="#" class="nav-link text-primary hover:text-gray-600 transition duration-300">Contacto</a>
             </div>
         </div>

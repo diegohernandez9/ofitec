@@ -5,17 +5,11 @@
                 <img src="{{ asset('img/ofitec_logo.webp') }}" alt="OFITEC Logo" class="h-10 mb-4">
                 <p class="text-gray-400 mb-4">Soluciones integrales en construcción y asesoría técnica para transformar sus espacios.</p>
                 <div class="flex space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
                     <a href="https://www.instagram.com/ofitec.ccp/" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-youtube"></i>
+                    <a href="{{config('app.whatsapp_link')}}" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>

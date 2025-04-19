@@ -12,7 +12,7 @@
                     asesoría técnica para satisfacer todas sus necesidades.</p>
             </div>
 
-            <!-- Servicios Construccion -->
+           
             <h3 class="text-2xl font-bold text-primary mb-8" data-aos="fade-up" data-aos-duration="600">Servicios de
                 Construcción y Oficina Tecnica</h3>
                 <div class="mb-16 swiper-container" data-aos="fade-up" data-aos-duration="500">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 
-                    <!-- Botones personalizados -->
+                   
                     <button class="custom-swiper-button custom-swiper-button-prev construction-prev bg-white hover:bg-gray-100 text-primary rounded-full shadow-md flex items-center justify-center transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />

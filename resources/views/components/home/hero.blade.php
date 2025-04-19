@@ -17,7 +17,7 @@
                 @endisset
 
                 @isset($secondaryButtonText)
-                    <a href="#"
+                    <a href="{{ route('contact.index') }}"
                        class="bg-transparent border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
                         {{ $secondaryButtonText }}
                     </a>

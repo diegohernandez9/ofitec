@@ -48,4 +48,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const targetId = toggle.getAttribute('data-target');
+        const content = document.getElementById(targetId);
+        
+      
+        content.classList.toggle('hidden');
+        
+        
+        const icon = toggle.querySelector('i');
+        icon.classList.toggle('rotate-180');
+    });
+});
 

@@ -212,4 +212,6 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+    'whatsapp_link' => env('WHATSAPP_LINK'),
+
 ];

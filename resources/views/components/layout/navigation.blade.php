@@ -22,11 +22,11 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             <div class="flex flex-col gap-2 justify-center">
-                <a href="{{route('home')}}" class="text-primary transition duration-300 p-2 rounded hover:bg-primary hover:text-white {{ request()->is('/') ? 'font-bold bg-primary text-white rounded' : '' }}">Inicio</a>
-                <a href="{{ url('/') }}#servicios" class="text-primary transition duration-300 p-2 rounded hover:bg-primary hover:text-white {{ request()->is('servicios') ? 'font-bold bg-primary text-white rounded' : '' }}">Servicios</a>
-                <a href="#nosotros" class="text-primary transition duration-300 p-2 rounded hover:bg-primary hover:text-white {{ request()->is('nosotros') ? 'font-bold bg-primary text-white rounded' : '' }}">Nosotros</a>
-                <a href="{{ route('projects.index') }}" class="text-primary transition duration-300 p-2 rounded hover:bg-primary hover:text-white {{ request()->routeIs('projects.index') ? 'font-bold bg-primary text-white rounded' : '' }}">Proyectos</a>
-                <a href="{{route('contact.index')}}" class="text-primary transition duration-300 p-2 rounded hover:bg-primary hover:text-white {{ request()->is('contacto') ? 'font-bold bg-primary text-white rounded' : '' }}">Contacto</a>
+                <a href="{{route('home')}}" class="botton-nav-toggle {{ request()->is('/') ? 'font-bold bg-primary text-white' : 'text-primary' }}">Inicio</a>
+                <a href="{{ url('/') }}#servicios" class="botton-nav-toggle {{ request()->is('servicios') ? 'font-bold bg-primary text-white rounded' : 'text-primary ' }}">Servicios</a>
+                <a href="#nosotros" class="botton-nav-toggle {{ request()->is('nosotros') ? 'font-bold bg-primary text-white rounded' : 'text-primary ' }}">Nosotros</a>
+                <a href="{{ route('projects.index') }}" class="botton-nav-toggle {{ request()->routeIs('projects.index') ? 'font-bold bg-primary text-white rounded' : 'text-primary' }}">Proyectos</a>
+                <a href="{{route('contact.index')}}" class="botton-nav-toggle {{ request()->is('contacto') ? 'font-bold bg-primary text-white rounded' : 'text-primary' }}">Contacto</a>
             </div>
         </div>
     </div>

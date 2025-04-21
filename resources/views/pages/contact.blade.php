@@ -99,14 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white p-6">
-                            <h3 class="font-bold text-primary mb-4 ">Síguenos en redes sociales</h3>
-                            <div class="flex space-x-4">
-                                <a href="#" class="bg-primary hover:bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center transition duration-300">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
+                    
                     </div>
                    
                 </div>

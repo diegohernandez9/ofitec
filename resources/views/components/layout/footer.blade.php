@@ -16,29 +16,33 @@
             <div>
                 <h4 class="text-lg font-bold mb-4">Servicios</h4>
                 <ul class="space-y-2">
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Reparación y Mantención</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Revestimiento y Mejoramiento</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Pintura Exterior</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Ampliación y Remodelación</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Paisajismo y Jardín</a></li>
+                    @foreach (array_slice($servicios_footer, 0,6 ) as $servicio)
+
+                    <li><a href="{{route('services.show', $servicio['link'])}}" class="text-gray-400 hover:text-white transition duration-300">{{$servicio['title']}}</a></li>
+
+                    @endforeach
+                    
                 </ul>
             </div>
             <div>
                 <h4 class="text-lg font-bold mb-4">Oficina Técnica</h4>
                 <ul class="space-y-2">
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Visitas Técnicas</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Modelamiento 3D</a></li>
-                    <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Inspección con Dron</a></li>
+                    @foreach (array_slice($servicios_footer, 6,3) as $servicio )
+                        
+                        <li><a href="{{route('services.show', $servicio['link'])}}" class="text-gray-400 hover:text-white transition duration-300">{{$servicio['title']}}</a></li>
+                    
+                    @endforeach
+                    
                 </ul>
             </div>
             <div>
                 <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
                 <ul class="space-y-2">
-                    <li><a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Inicio</a></li>
+                    <li><a href="{{route('home')}}" class="text-gray-400 hover:text-white transition duration-300">Inicio</a></li>
                     <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Servicios</a></li>
                     <li><a href="#nosotros" class="text-gray-400 hover:text-white transition duration-300">Nosotros</a></li>
-                    <li><a href="#proyectos" class="text-gray-400 hover:text-white transition duration-300">Proyectos</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contacto</a></li>
+                    <li><a href="{{route('projects.index')}}" class="text-gray-400 hover:text-white transition duration-300">Proyectos</a></li>
+                    <li><a href="{{route('contact.index')}}" class="text-gray-400 hover:text-white transition duration-300">Contacto</a></li>
                 </ul>
             </div>
         </div>

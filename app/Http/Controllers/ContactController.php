@@ -45,17 +45,10 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
     
-        Mail::send([], [], function ($message) use ($data) {
+        Mail::send('email.contact', ['data' => $data], function ($message) use ($data) {
             $message->from(config('mail.from.address'), config('mail.from.name'))
-                    ->to('destinatario@correo.cl') // puedes poner cualquier correo, solo lo verás en Mailtrap
-                    ->subject($data['subject'])
-                    ->html(
-                        "<h1>Mensaje de contacto</h1>" .
-                        "<p><strong>Nombre:</strong> {$data['name']}</p>" .
-                        "<p><strong>Correo:</strong> {$data['email']}</p>" .
-                        "<p><strong>Teléfono:</strong> {$data['phone']}</p>" .
-                        "<p><strong>Mensaje:</strong><br>{$data['message']}</p>"
-                    );
+                    ->to('destinatario@correo.cl')
+                    ->subject($data['subject']);
         });
     
         return back()->with('success', 'Mensaje enviado correctamente.');

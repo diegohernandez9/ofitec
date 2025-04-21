@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'OFITEC | Servicios de Construcción y Oficina Técnica' }}</title>
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
+
+    <meta name="description" content="{{ $description ?? 'Servicios de Construcción y Oficina Técnica' }}">
+    <meta name="author" content="{{ $author ?? 'OFITEC' }}">
+
+
+    <meta property="og:url" content="https://ofitec-master-hblhru.laravel.cloud/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OFITEC | Servicios de Construcción y Oficina Técnica">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="{{ asset('img/logo.webp') }}">
+
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ofitec">
+    <meta name="twitter:title" content="{{ $title ?? 'OFITEC | Servicios de Construcción y Oficina Técnica' }}">
+    <meta name="twitter:description" content="{{ $description ?? 'Servicios de Construcción y Oficina Técnica' }}">
+    <meta name="twitter:image" content="{{ asset('img/logo.webp') }}">
     
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,7 +40,7 @@
         {{ $slot }}
     </main>
     
-    <x-layout.footer />
+    <x-layout.footer/>
     <x-ui.back-to-top />
     
     <!-- Scripts -->

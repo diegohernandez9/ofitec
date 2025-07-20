@@ -12,14 +12,15 @@
 
 .swiper-container {
     position: relative;
-    padding: 0 40px;
+    padding: 0 60px;
+    overflow: visible;
 }
 
 .custom-swiper-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 9;
     width: 40px;
     height: 40px;
 }
@@ -55,4 +56,19 @@
 
 .botton-nav-toggle {
    @apply transition duration-300 p-2 rounded
+}
+
+.img-about{
+background-image: url('/public/img/about_img.avif') ;
+background-attachment: fixed;
+}
+
+.hero-image {
+    background-image: url('/public/img/hero_img.webp');
+}
+
+.contact{
+    background-image: url('/public/img/bg-contact.webp');
+    background-size: cover;
+    background-position: center;
 }

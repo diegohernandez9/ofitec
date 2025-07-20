@@ -27,7 +27,7 @@
             <div>
                 <h4 class="text-lg font-bold mb-4">Oficina Técnica</h4>
                 <ul class="space-y-2">
-                    @foreach (array_slice($servicios_footer, 6,3) as $servicio )
+                    @foreach (array_slice($servicios_footer, 6,4) as $servicio )
                         
                         <li><a href="{{route('services.show', $servicio['link'])}}" class="text-gray-400 hover:text-white transition duration-300">{{$servicio['title']}}</a></li>
                     

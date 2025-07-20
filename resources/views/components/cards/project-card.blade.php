@@ -1,7 +1,7 @@
 @props(['image','icon', 'title', 'description', 'tags' => [], 'delay' => 0])
 
-<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105" data-aos="fade-up" data-aos-duration="500" data-aos-delay="{{ $delay }}">
-    <div class="h-48 bg-gray-100 flex items-center justify-center">
+<div class="bg-white rounded-lg shadow-md overflow-hidden " data-aos="fade-up" data-aos-duration="500" data-aos-delay="{{ $delay }}">
+    <div class="h-48 bg-gray-100 flex items-center justify-center transition-transform duration-300 hover:transform hover:scale-105">
         @if($image)
         <img src="{{ $image }}" alt="{{ $title }}" class="object-cover w-full h-full">
         @else

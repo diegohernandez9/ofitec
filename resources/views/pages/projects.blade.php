@@ -24,7 +24,7 @@
     <section id="proyectos" class="py-16 bg-light">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="project-card transform hover:scale-105 transition-transform duration-500">
+                <div class="project-card transform hover:scale-105 transition-transform duration-500" data-category="comercial oficina-tecnica">
                     <x-cards.project-card image="{{ asset('img/projects/semiInvernadero.avif') }}" title="Semi Invernadero Agrícola"
                     title="Semi Invernadero Agrícola"
                     description="Proyecto agrícola de 1 ha con techos retráctiles. Incluye estudio técnico, cubicación y análisis de costos según normativa chilena."
@@ -46,56 +46,32 @@
 
                 {{-- pegados --}}
 
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
-                </div>
-                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
-                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
-                    title="Asesoría por Grietas en Vivienda"
-                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
-                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
+                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="oficina-tecnica">
+                    <x-cards.project-card image="{{ asset('img/projects/viviendas_residenciales.avif') }}" data-category="oficina-tecnica" titleClass="project-card"
+                    title="Estudio de Proyectos Habitacionales (en proceso)"
+                    description="Actualmente en etapa de análisis de proyectos habitacionales particulares. Se está desarrollando propuesta técnica y financiera inicial."
+                    :tags="['Proyecto Habitacional', 'En Estudio']" :delay="300" />
                 </div>
 
-                
+                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="residencial oficina-tecnica">
+                    <x-cards.project-card image="{{ asset('img/projects/asesoria-techumbre.avif') }}" data-category="residencial oficina-tecnica" titleClass="project-card"
+                    title="Asesoría por daños en techumbre"
+                    description="Evaluación técnica de techumbre en tejas de madera. Incluye mediciones, revisión estructural, tomas aéreas y elaboración de informe técnico con propuestas de reparación."
+                    :tags="['Evaluación de Techumbre', 'Asesoría Técnica']" :delay="300" />
+                </div>
+                <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
+                    <x-cards.project-card image="{{ asset('img/projects/Prefabricada-familiar-m2.webp') }}" data-category="remodelacion" titleClass="project-card"
+                    title="Vivienda unifamiliar prefabricada 67,37m²"
+                    description="Vivienda de 1 piso construida con paneles prefabricados en madera. Incluye estudio técnico, cubicación, análisis de costos e implementación según normativa chilena."
+                    :tags="['Vivienda Prefabricada', 'Normativa Chilena']" :delay="300" />
+                </div>
+                {{-- <div class="project-card hover:scale-105 transition-transform duration-500" data-category="remodelacion">
+                    <x-cards.project-card image="{{ asset('img/projects/asesoria_grietas_vivienda.avif') }}" data-category="remodelacion" titleClass="project-card"
+                    title="Asesoría por Grietas en Vivienda"
+                    description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
+                    :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
+                </div>
+                 --}}
                 
             </div>
         </div>

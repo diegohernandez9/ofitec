@@ -21,6 +21,7 @@
                             <p style="font-size: 16px;"><strong>Nombre:</strong> {{ $data['name'] }}</p>
                             <p style="font-size: 16px;"><strong>Correo:</strong> {{ $data['email'] }}</p>
                             <p style="font-size: 16px;"><strong>Teléfono:</strong> {{ $data['phone'] ?? 'No proporcionado' }}</p>
+                            <p style="font-size: 16px;"><strong>Asunto:</strong> {{ $data['subject'] ?? 'No proporcionado' }}</p>
                             <p style="font-size: 16px;"><strong>Mensaje:</strong></p>
                             <p style="font-size: 16px; color: #555;">{{ $data['message'] }}</p>
 
@@ -40,4 +41,7 @@
     </table>
 
 </body>
+
+
+
 </html>

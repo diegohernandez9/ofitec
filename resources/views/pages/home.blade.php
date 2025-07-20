@@ -2,7 +2,7 @@
     <x-home.hero title="Soluciones Integrales en Construcción"
         description="Ofrecemos servicios profesionales de construcción, remodelación y asesoría técnica para transformar sus espacios."
         primaryButtonText="Nuestros Servicios" secondaryButtonText="Contáctanos"
-        image="{{ asset('img/hero_img.webp') }}" imageAlt="Construcción profesional" />
+        imageAlt="Construcción profesional" />
 
     <section id="servicios" class="py-16 bg-light">
         <div class="container mx-auto px-4">
@@ -16,7 +16,7 @@
             <h3 class="text-2xl font-bold text-primary mb-8" data-aos="fade-up" data-aos-duration="600">Servicios de
                 Construcción y Oficina Tecnica</h3>
                 <div class="mb-16 swiper-container" data-aos="fade-up" data-aos-duration="500">
-                    <div class="swiper constructionServicesSwiper">
+                    <div class="swiper constructionServicesSwiper overflow-visible">
                         <div class="swiper-wrapper">
                             @foreach ($servicios as $servicio)
                                 <div class="swiper-slide h-auto min-h-[450px] px-4 py-4">
@@ -71,6 +71,8 @@
                     title="Asesoría por Grietas en Vivienda"
                     description="Diagnóstico estructural por grietas en muros y pisos. Medición en terreno e informe técnico para seguimiento."
                     :tags="['Grietas en Muros', 'Patología de Construcción']" :delay="300" />
+                
+            
             </div>
             <div class="text-center mt-10" data-aos="fade-up" data-aos-duration="500">
                 <a href="{{route('projects.index')}}"

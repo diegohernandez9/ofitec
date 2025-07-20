@@ -29,6 +29,7 @@
     
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -95,12 +96,14 @@
                 
             
                 projectCards.forEach(card => {
-                    if (category === 'all' || card.getAttribute('data-category') === category) {
-                        card.style.display = 'block';
-                        found = true; 
-                    } else {
-                        card.style.display = 'none';
-                    }
+                const cardCategories = card.getAttribute('data-category')?.split(' ') || [];
+
+                    if (category === 'all' || cardCategories.includes(category)) {
+                card.style.display = 'block';
+                found = true;
+            } else {
+                card.style.display = 'none';
+            }
                 });
                 
                 
@@ -113,5 +116,13 @@
         });
 
     </script>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      const prefix = document.getElementById('phonePrefix').value;
+      const number = document.getElementById('phoneNumber').value.trim();
+      document.getElementById('fullPhone').value = prefix + number;
+    });
+  </script>
 </body>
 </html>

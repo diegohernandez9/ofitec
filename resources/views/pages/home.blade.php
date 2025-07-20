@@ -14,7 +14,7 @@
 
            
             <h3 class="text-2xl font-bold text-primary mb-8" data-aos="fade-up" data-aos-duration="600">Servicios de
-                Construcción y Oficina Tecnica</h3>
+                Construcción y Oficina Técnica</h3>
                 <div class="mb-16 swiper-container" data-aos="fade-up" data-aos-duration="500">
                     <div class="swiper constructionServicesSwiper overflow-visible">
                         <div class="swiper-wrapper">
@@ -53,13 +53,12 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="text-3xl font-bold text-primary mb-2">Proyectos Destacados</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Conozca algunos de nuestros proyectos más destacados y el
-                    impacto que hemos generado.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Conozca algunos de nuestros proyectos más destacados.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <x-cards.project-card image="{{ asset('img/projects/semiInvernadero.avif') }}"
                     title="Semi Invernadero Agrícola"
-                    description="Proyecto agrícola de 1 ha con techos retráctiles. Incluye estudio técnico, cubicación y análisis de costos según normativa chilena."
+                    description="Proyecto agrícola de 1 hectárea con techos retráctiles. Incluye estudio técnico, cubicación y análisis de costos según normativa chilena."
                     :tags="['Proyecto Agrícola','Normativa Chilena']" :delay="100" />
 
                 <x-cards.project-card image="{{ asset('img/projects/vivienda_unifamiliar_280m2.avif') }}"

@@ -12,7 +12,7 @@ class HomeController extends Controller
             'link' => 'reparacion-mantencion',
             'title' => 'Reparación y Mantención',
             'icon' => 'tools',
-            'description' => 'Servicios profesionales de reparación y mantención para mantener sus espacios en óptimas condiciones.',
+            'description' => 'Soluciones técnicas eficientes para conservar la seguridad y el buen estado de viviendas, oficinas o instalaciones.',
             'long_description' => 'Detalles extendidos del servicio de reparación y mantención...',
         ],
         [
@@ -26,7 +26,7 @@ class HomeController extends Controller
             'link'=> 'ampliacion-remodelacion',
             'title' => 'Ampliación y Remodelación',
             'icon' => 'home',
-            'description' => 'Transformamos sus espacios con servicios de ampliación y remodelación adaptados a sus necesidades.',
+            'description' => 'Redefinimos espacios existentes para mejorar distribución, funcionalidad y valor arquitectónico.',
             'long_description' => 'Detalles extendidos del servicio de reparación y mantención...',
         ],
         [
@@ -40,7 +40,7 @@ class HomeController extends Controller
             'link'=> 'cubicacion-presupuestos',
             'title' => 'Cubicación y Presupuestos',
             'icon' => 'calculator',
-            'description' => 'Servicios de cubicación y presupuestos para una planificación precisa de sus proyectos.',
+            'description' => 'Permite estimar y controlar el presupuesto del proyecto mediante estudio técnico de cantidades y costos.',
             'long_description' => 'Estudio completo del proyecto. Cuantificación de materiales, mano de obra y recursos. Nch 353. Servicio para todo el país.',
         ],
         [
